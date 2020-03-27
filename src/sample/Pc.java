@@ -11,7 +11,10 @@ public class Pc {
     private SimpleStringProperty Del= new SimpleStringProperty("");
     private SimpleIntegerProperty Pris= new SimpleIntegerProperty(0);
 
-    Pc(String navn, String del, int pris){
+    Pc(String navn, String del, int pris) throws InvalidNameException, InvalidDelException, InvalidPrisException {
+        setNavn(navn);
+        setDel(del);
+        setPris(pris);
 
     }
 
