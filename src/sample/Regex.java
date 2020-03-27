@@ -8,4 +8,10 @@ public class Regex {
 
         return name.matches(regexName);
     }
+
+    public static boolean regexDel(String del){
+        String regexDel= "[A-Za-z+-_. ]+";
+
+        return del.matches(regexDel);
+    }
 }
