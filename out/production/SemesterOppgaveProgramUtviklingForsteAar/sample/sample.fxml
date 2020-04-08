@@ -7,17 +7,16 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label fx:id="lblNavn" layoutX="272.0" layoutY="14.0" text="Navn" />
       <Label fx:id="lblDel" layoutX="272.0" layoutY="66.0" text="Del" />
       <Label fx:id="lblPris" layoutX="272.0" layoutY="126.0" text="Pris" />
-      <TableView layoutX="186.0" layoutY="172.0" prefHeight="200.0" prefWidth="227.0">
+      <TableView layoutX="187.0" layoutY="180.0" prefHeight="200.0" prefWidth="227.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-            <TableColumn prefWidth="75.0" text="Column X" />
+          <TableColumn fx:id="navnColumn" prefWidth="75.0" text="Navn" />
+          <TableColumn fx:id="delColumn" prefWidth="75.0" text="Del" />
+            <TableColumn fx:id="prisColumn" prefWidth="75.0" text="Pris" />
         </columns>
       </TableView>
       <TextField fx:id="txtNavn" layoutX="212.0" layoutY="31.0" />
