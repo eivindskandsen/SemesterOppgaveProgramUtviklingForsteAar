@@ -87,8 +87,9 @@ public class Controller {
 
     }
 
-    @FXML
-    void actionButtonLeggTil(ActionEvent event) {
+
+
+    public void actionButtonLeggTil(javafx.event.ActionEvent actionEvent) {
         Pc nyPc = createPersonFromGUI();{
             if(nyPc != null){
                 collection.addElement(nyPc);
@@ -96,5 +97,6 @@ public class Controller {
             }
         }
     }
+    }
 
-}
+
