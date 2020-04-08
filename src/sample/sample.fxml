@@ -8,15 +8,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <children>
       <Label fx:id="lblNavn" layoutX="272.0" layoutY="14.0" text="Navn" />
       <Label fx:id="lblDel" layoutX="272.0" layoutY="66.0" text="Del" />
       <Label fx:id="lblPris" layoutX="272.0" layoutY="126.0" text="Pris" />
       <TableView fx:id="tableView" layoutX="187.0" layoutY="180.0" prefHeight="200.0" prefWidth="233.0">
         <columns>
-          <TableColumn fx:id="navnColumn" prefWidth="75.0" text="Navn" />
-            
-          <TableColumn fx:id="delColumn" prefWidth="75.0" text="Del" />
+            <TableColumn fx:id="navnColumn" prefWidth="75.0" text="Navn" />
+            <TableColumn fx:id="delColumn" prefWidth="75.0" text="Del" />
             <TableColumn fx:id="prisColumn" prefWidth="75.0" text="Pris" />
         </columns>
       </TableView>
@@ -24,5 +22,4 @@
       <TextField fx:id="txtDel" layoutX="212.0" layoutY="93.0" />
       <TextField fx:id="txtPris" layoutX="212.0" layoutY="143.0" />
       <Button fx:id="buttonLeggTil" layoutX="413.0" layoutY="143.0" mnemonicParsing="false" onAction="#actionButtonLeggTil" text="Legg til" />
-   </children>
 </AnchorPane>
