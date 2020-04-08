@@ -71,9 +71,7 @@ public class Controller {
             int intPris=Integer.parseInt(innPris);
 
             enPc= new Pc(innNavn, innDel, intPris);
-        }catch(InvalidNameException e){
-            e.printStackTrace();
-            txtNavn.setText(e.getMessage());
+
         }catch(InvalidDelException e){
             e.printStackTrace();
             txtDel.setText(e.getMessage());
@@ -84,12 +82,18 @@ public class Controller {
             e.printStackTrace();
         }
 
+        return enPc;
 
     }
 
     @FXML
-    private Button buttonLeggTil (ActionEvent event){
-        Pc nyPc =
+    void buttonLeggTil (ActionEvent event){
+        Pc nyPc = createPersonFromGUI();{
+            if(nyPc != null){
+                collection.addElement(nyPc);
+                resetTextFields();
+            }
+        }
     }
 
 }
