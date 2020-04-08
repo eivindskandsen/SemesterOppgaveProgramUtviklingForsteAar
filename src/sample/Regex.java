@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 
 public class Regex {
     public static boolean regexName(String name) {
-        String regexName = "[A-Za-z+_. ]+";
+        String regexName = "[A-Za-z0-9+_. ]+";
 
         return name.matches(regexName);
     }

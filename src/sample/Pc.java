@@ -55,5 +55,8 @@ public class Pc {
         }
     }
 
+    public String toString(){
+        return Navn.getValue()+", "+Del.getValue()+", "+Pris.getValue()+"\n";
+    }
 
 }
