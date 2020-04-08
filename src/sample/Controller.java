@@ -29,7 +29,8 @@ public class Controller {
     @FXML
     private TextField txtPris;
 
-
+    @FXML
+    private Button buttonLeggTil;
 
 
     @FXML
@@ -87,7 +88,7 @@ public class Controller {
     }
 
     @FXML
-    void buttonLeggTil (ActionEvent event){
+    void actionButtonLeggTil(ActionEvent event) {
         Pc nyPc = createPersonFromGUI();{
             if(nyPc != null){
                 collection.addElement(nyPc);
