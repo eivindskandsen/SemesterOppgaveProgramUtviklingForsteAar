@@ -1,6 +1,8 @@
-package sample;
+import sample.Regex;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 
 class RegexTest {
 
