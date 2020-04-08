@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 
-
+import java.util.ArrayList;
 
 
 public class Controller {
@@ -39,4 +39,7 @@ public class Controller {
     @FXML
     private TableColumn<Pc, Integer> prisColumn;
 
+
+    ArrayList<Pc> etArray= new ArrayList<>();
+    DataCollection collection= new DataCollection();
 }
