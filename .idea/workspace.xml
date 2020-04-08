@@ -5,15 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/InvalidDelException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/InvalidDelException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/InvalidNameException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/InvalidNameException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/InvalidPrisException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/InvalidPrisException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Pc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Pc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/PcValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/PcValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Regex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/RegexTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +151,6 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="SemesterOppgaveProgramUtviklingForsteAar" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value=".*" />
@@ -286,18 +279,27 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="76" key="#Project_Structure" timestamp="1586349424936">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="76" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1586349424936" />
     <state x="437" y="159" key="#Unnamed" timestamp="1586269265585">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="437" y="159" key="#Unnamed/0.0.1680.1010@0.0.1680.1010" timestamp="1586269265585" />
-    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586275942673">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="269" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586350972300">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="269" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1586350972300" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586275942673" />
     <state x="570" y="284" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586275917527">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="284" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586275917527" />
+    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586350969232">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1586350969232" />
     <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586346908155">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -347,10 +349,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="222" y="124" key="new project wizard/0.0.1680.1010@0.0.1680.1010" timestamp="1586202054801" />
-    <state x="460" y="191" width="672" height="560" key="search.everywhere.popup" timestamp="1586342888292">
+    <state x="462" y="191" width="672" height="560" key="search.everywhere.popup" timestamp="1586351169019">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="460" y="191" width="672" height="560" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1586342888292" />
+    <state x="462" y="191" width="672" height="560" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1586351169019" />
     <state x="503" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1586201527189" />
   </component>
 </project>
