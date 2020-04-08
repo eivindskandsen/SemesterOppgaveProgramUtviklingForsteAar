@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label fx:id="lblNavn" layoutX="272.0" layoutY="14.0" text="Navn" />
@@ -14,10 +15,21 @@
       <Label fx:id="lblPris" layoutX="272.0" layoutY="126.0" text="Pris" />
       <TableView fx:id="tableView" layoutX="187.0" layoutY="180.0" prefHeight="200.0" prefWidth="233.0">
         <columns>
-          <TableColumn fx:id="navnColumn" prefWidth="75.0" text="Navn" />
-            
-          <TableColumn fx:id="delColumn" prefWidth="75.0" text="Del" />
-            <TableColumn fx:id="prisColumn" prefWidth="75.0" text="Pris" />
+          <TableColumn fx:id="navnColumn" prefWidth="75.0" text="navn" >
+            <cellValueFactory>
+                <PropertyValueFactory property="Navn" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="delColumn" prefWidth="75.0" text="del" >
+            <cellValueFactory>
+                <PropertyValueFactory property="Del" />
+            </cellValueFactory>
+          </TableColumn>
+            <TableColumn fx:id="prisColumn" prefWidth="75.0" text="pris" >
+            <cellValueFactory>
+                <PropertyValueFactory property="Pris" />
+            </cellValueFactory>
+            </TableColumn>
         </columns>
       </TableView>
       <TextField fx:id="txtNavn" layoutX="212.0" layoutY="31.0" />

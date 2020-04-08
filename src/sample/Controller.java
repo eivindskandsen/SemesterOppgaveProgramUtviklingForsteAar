@@ -1,7 +1,10 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.fxml.Initializable;
 import javafx.scene.control.cell.TextFieldTableCell;
 
 import java.awt.event.ActionEvent;
@@ -10,7 +13,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 
-public class Controller {
+public class Controller implements Initializable {
     @FXML
     private Label lblNavn;
 
@@ -46,7 +49,7 @@ public class Controller {
     private TableColumn<Pc, Integer> prisColumn;
 
 
-    ArrayList<Pc> etArray= new ArrayList<>();
+    ObservableList<Pc> etArray= FXCollections.observableArrayList();
     DataCollection collection= new DataCollection();
     IntegerStringConverter integerStringConverter= new IntegerStringConverter();
 
@@ -61,17 +64,18 @@ public class Controller {
         txtPris.setText("");
     }
 
-    private Pc createPersonFromGUI(){
+    private Pc createPcFromGUI(){
         String innNavn=txtNavn.getText();
         String innDel=txtDel.getText();
         String innPris=txtPris.getText();
 
         Pc enPc= null;
 
-        try{
-            int intPris=Integer.parseInt(innPris);
+        try {
+            int intPris = Integer.parseInt(innPris);
 
-            enPc= new Pc(innNavn, innDel, intPris);
+            enPc = new Pc(innNavn, innDel, intPris);
+
 
         }catch(InvalidDelException e){
             e.printStackTrace();
@@ -81,6 +85,10 @@ public class Controller {
             txtPris.setText(e.getMessage());
         } catch (javax.naming.InvalidNameException e) {
             e.printStackTrace();
+            txtNavn.setText(e.getMessage())  ;
+        }catch(NumberFormatException e){
+            e.printStackTrace();
+            txtPris.setText("Feil i konvertering");
         }
 
         return enPc;
@@ -90,8 +98,9 @@ public class Controller {
 
 
     public void actionButtonLeggTil(javafx.event.ActionEvent actionEvent) {
-        Pc nyPc = createPersonFromGUI();{
+        Pc nyPc = createPcFromGUI();{
             if(nyPc != null){
+
                 collection.addElement(nyPc);
                 resetTextFields();
             }
