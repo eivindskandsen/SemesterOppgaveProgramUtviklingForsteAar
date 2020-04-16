@@ -105,6 +105,41 @@ public class Controller implements Initializable {
             }
         }
     }
+
+    public void endreNavn(TableColumn.CellEditEvent<Pc, String> cellEditEvent) {
+        System.out.println(cellEditEvent.getNewValue());
+        try {
+            cellEditEvent.getRowValue().setNavn(cellEditEvent.getNewValue());
+        } catch (javax.naming.InvalidNameException e) {
+            System.out.println(e.getMessage());
+        }
+        tableView.refresh();
+    }
+
+
+    public void endreDel(TableColumn.CellEditEvent<Pc, String> cellEditEvent){
+        System.out.println(cellEditEvent.getNewValue());
+        try{
+            cellEditEvent.getRowValue().setDel(cellEditEvent.getNewValue());
+        }catch (InvalidDelException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void endrePris(TableColumn.CellEditEvent<Pc, Integer> cellEditEvent){
+        System.out.println(cellEditEvent.getNewValue());
+        if(integerStringConverter.wasSuccessful()) {
+            try {
+                cellEditEvent.getRowValue().setPris(cellEditEvent.getNewValue());
+            } catch (InvalidPrisException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+
+
+
+
     }
 
 

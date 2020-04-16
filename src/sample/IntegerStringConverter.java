@@ -22,4 +22,6 @@ public class IntegerStringConverter extends javafx.util.converter.IntegerStringC
             return 0;
         }
     }
+
+    public boolean wasSuccessful(){return success;}
 }

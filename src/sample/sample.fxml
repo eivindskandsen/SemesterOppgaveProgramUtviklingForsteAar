@@ -14,17 +14,17 @@
       <Label fx:id="lblPris" layoutX="272.0" layoutY="126.0" text="Pris" />
       <TableView fx:id="tableView" layoutX="187.0" layoutY="180.0" prefHeight="200.0" prefWidth="233.0">
         <columns>
-          <TableColumn fx:id="navnColumn" prefWidth="75.0" text="navn" >
+          <TableColumn fx:id="navnColumn" onEditCommit="#endreNavn" prefWidth="75.0" text="navn" >
             <cellValueFactory>
                 <PropertyValueFactory property="Navn" />
             </cellValueFactory>
           </TableColumn>
-          <TableColumn fx:id="delColumn" prefWidth="75.0" text="del" >
+          <TableColumn fx:id="delColumn" onEditCommit="#endreDel" prefWidth="75.0" text="del" >
             <cellValueFactory>
                 <PropertyValueFactory property="Del" />
             </cellValueFactory>
           </TableColumn>
-            <TableColumn fx:id="prisColumn" prefWidth="75.0" text="pris" >
+            <TableColumn fx:id="prisColumn" onEditCommit="#endrePris" prefWidth="75.0" text="pris" >
             <cellValueFactory>
                 <PropertyValueFactory property="Pris" />
             </cellValueFactory>
