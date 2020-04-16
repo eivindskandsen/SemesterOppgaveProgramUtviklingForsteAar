@@ -1,3 +1,5 @@
+package test;
+
 import sample.Regex;
 
 import static org.junit.Assert.assertFalse;
@@ -8,19 +10,20 @@ class RegexTest {
 
     @org.junit.jupiter.api.Test
     void regexName() {
-        assertTrue(Regex.regexName("Eivind"));
+          assertTrue(Regex.regexName("Eivind"));
         assertTrue(Regex.regexName("Eivind Skandsen"));
 
         assertFalse(Regex.regexName(""));
-        assertFalse(Regex.regexName("1246721"));
+        assertFalse(Regex.regexName(";"));
     }
 
     @org.junit.jupiter.api.Test
     void regexDel() {
-        assertTrue(Regex.regexName("Skjerm"));
-        assertTrue(Regex.regexName("Skjerm kort"));
+        assertTrue(Regex.regexDel("Skjerm"));
+        assertTrue(Regex.regexDel("Skjerm kort"));
 
-        assertFalse(Regex.regexName(""));
-        assertFalse(Regex.regexName("1246721"));
+        assertFalse(Regex.regexDel(""));
+        assertFalse(Regex.regexDel(";"));
+
     }
 }

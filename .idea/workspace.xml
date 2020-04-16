@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/test/RegexTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/RegexTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Regex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/PcFormater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/PcFormater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RegexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RegexTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ukesoppgave" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -129,7 +130,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.RegexTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -172,11 +173,51 @@
     <configuration name="RegexTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="SemesterOppgaveProgramUtviklingForsteAar" />
       <useClassPathOnly />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegexTest" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.RegexTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegexTest.regexDel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SemesterOppgaveProgramUtviklingForsteAar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.RegexTest" />
+      <option name="METHOD_NAME" value="regexDel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegexTest.regexName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SemesterOppgaveProgramUtviklingForsteAar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.RegexTest" />
+      <option name="METHOD_NAME" value="regexName" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -235,7 +276,15 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.RegexTest" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.RegexTest.regexName" />
+      <item itemvalue="JUnit.RegexTest.regexDel" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RegexTest.regexDel" />
+        <item itemvalue="JUnit.RegexTest.regexName" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -255,6 +304,8 @@
       <workItem from="1586201502245" duration="85000" />
       <workItem from="1586201615035" duration="9696000" />
       <workItem from="1586341536272" duration="2083000" />
+      <workItem from="1586389023294" duration="39000" />
+      <workItem from="1586949120148" duration="4684000" />
     </task>
     <servers />
   </component>
@@ -287,19 +338,19 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="437" y="159" key="#Unnamed/0.0.1680.1010@0.0.1680.1010" timestamp="1586269265585" />
-    <state x="269" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586350972300">
+    <state x="36" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586957685850">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="269" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1586350972300" />
+    <state x="36" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1586957685850" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586275942673" />
     <state x="570" y="284" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586275917527">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="284" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586275917527" />
-    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586350969232">
+    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586949346259">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1586350969232" />
+    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1586949346259" />
     <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586346908155">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -309,37 +360,55 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="636" y="363" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1010@0.0.1680.1010" timestamp="1586275919016" />
-    <state x="620" y="245" key="FileChooserDialogImpl" timestamp="1586340112472">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="567" y="202" key="FileChooserDialogImpl" timestamp="1587027809724">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="567" y="202" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1587027809724" />
     <state x="620" y="245" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1586340112472" />
-    <state width="1636" height="249" key="GridCell.Tab.0.bottom" timestamp="1586363762636">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="719" height="211" key="GridCell.Tab.0.bottom" timestamp="1587027522219">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="721" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586343643096" />
+    <state width="719" height="211" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587027522219" />
     <state width="1636" height="249" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1586363762636" />
-    <state width="1636" height="249" key="GridCell.Tab.0.center" timestamp="1586363762635">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="719" height="211" key="GridCell.Tab.0.center" timestamp="1587027522219">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="721" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586343643096" />
+    <state width="719" height="211" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587027522219" />
     <state width="1636" height="249" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1586363762635" />
-    <state width="1636" height="249" key="GridCell.Tab.0.left" timestamp="1586363762635">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="719" height="211" key="GridCell.Tab.0.left" timestamp="1587027522219">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="721" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586343643096" />
+    <state width="719" height="211" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587027522219" />
     <state width="1636" height="249" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1586363762635" />
-    <state width="1636" height="249" key="GridCell.Tab.0.right" timestamp="1586363762636">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="719" height="211" key="GridCell.Tab.0.right" timestamp="1587027522219">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="721" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586343643096" />
+    <state width="719" height="211" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587027522219" />
     <state width="1636" height="249" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1586363762636" />
+    <state width="1491" height="264" key="GridCell.Tab.1.bottom" timestamp="1586949559812">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="264" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586949559812" />
+    <state width="1491" height="264" key="GridCell.Tab.1.center" timestamp="1586949559812">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="264" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1586949559812" />
+    <state width="1491" height="264" key="GridCell.Tab.1.left" timestamp="1586949559812">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="264" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1586949559812" />
+    <state width="1491" height="264" key="GridCell.Tab.1.right" timestamp="1586949559812">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="264" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1586949559812" />
     <state x="341" y="136" key="SettingsEditor" timestamp="1586340113776">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1586340113776" />
-    <state x="541" y="327" key="com.intellij.ide.util.TipDialog" timestamp="1586201616193">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="495" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1587027797275">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="495" y="270" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1587027797275" />
     <state x="541" y="327" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586201616193" />
     <state x="544" y="397" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586201663624">
       <screen x="0" y="0" width="1680" height="1010" />
