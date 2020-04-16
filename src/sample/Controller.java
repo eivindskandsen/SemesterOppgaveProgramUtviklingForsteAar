@@ -76,12 +76,6 @@ public class Controller implements Initializable {
             enPc = new Pc(innNavn, innDel, intPris);
 
 
-        }catch(InvalidDelException e){
-            e.printStackTrace();
-            txtDel.setText(e.getMessage());
-        }catch(InvalidPrisException e){
-            e.printStackTrace();
-            txtPris.setText(e.getMessage());
         } catch (javax.naming.InvalidNameException e) {
             e.printStackTrace();
             txtNavn.setText(e.getMessage())  ;

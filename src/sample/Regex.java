@@ -10,7 +10,7 @@ public class Regex {
     }
 
     public static boolean regexDel(String del){
-        String regexDel= "[A-Za-z+-_. ]+";
+        String regexDel= "[A-Za-z+_. ]+";
 
         return del.matches(regexDel);
     }
