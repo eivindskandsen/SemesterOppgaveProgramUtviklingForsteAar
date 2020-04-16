@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Regex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Regex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegexTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -302,7 +302,7 @@
       <workItem from="1586341536272" duration="2083000" />
       <workItem from="1586389023294" duration="39000" />
       <workItem from="1586949120148" duration="4684000" />
-      <workItem from="1587027794047" duration="1800000" />
+      <workItem from="1587027794047" duration="3018000" />
     </task>
     <servers />
   </component>
@@ -335,19 +335,19 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="437" y="159" key="#Unnamed/0.0.1680.1010@0.0.1680.1010" timestamp="1586269265585" />
-    <state x="36" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586957685850">
+    <state x="36" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587031086515">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="36" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1586957685850" />
+    <state x="36" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1587031086515" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586275942673" />
     <state x="570" y="284" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586275917527">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="284" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586275917527" />
-    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586949346259">
+    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587031084984">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1586949346259" />
+    <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1587031084984" />
     <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586346908155">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -398,9 +398,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1491" height="264" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1586949559812" />
-    <state x="341" y="136" key="SettingsEditor" timestamp="1586340113776">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="312" y="0" key="SettingsEditor" timestamp="1587031962514">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="312" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587031962514" />
     <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1586340113776" />
     <state x="495" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1587027797275">
       <screen x="0" y="0" width="1536" height="834" />
