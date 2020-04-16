@@ -147,8 +147,9 @@ public class Controller implements Initializable {
         FileChooser save = new FileChooser();
         FileChooser.ExtensionFilter saveTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
         save.getExtensionFilters().addAll(saveTxt);
-        File fil = save.showOpenDialog(null);
-        String star = PcFormater.formatPc((Pc) etArray);
+        File fil = save.showSaveDialog(null);
+        String star = PcFormater.formatPc((Pc) collection);
+        System.out.print(star);
         try {
             WriterText.save(fil.toPath(), star);
         } catch (IOException e) {
