@@ -88,7 +88,7 @@ public class Controller implements Initializable {
         }catch(NumberFormatException e){
             e.printStackTrace();
             txtPris.setText("Feil i konvertering");
-        }
+        } 
 
         return enPc;
 

@@ -327,11 +327,12 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="76" key="#Project_Structure" timestamp="1586349424936">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="395" y="92" key="#Project_Structure" timestamp="1587030839520">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="361" y="76" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1586349424936" />
-    <state x="437" y="159" key="#Unnamed" timestamp="1586269265585">
+    <state x="395" y="92" key="#Project_Structure/0.0.1680.1010@0.0.1680.1010" timestamp="1587030839520" />
+    <state x="437" y="159" key="#Unnamed" timestamp="1587028397217">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="437" y="159" key="#Unnamed/0.0.1680.1010@0.0.1680.1010" timestamp="1586269265585" />
@@ -353,7 +354,7 @@
     </state>
     <state x="629" y="325" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1586341558037" />
     <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586346908155" />
-    <state x="636" y="363" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586275919016">
+    <state x="636" y="363" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587030824188">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="636" y="363" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1010@0.0.1680.1010" timestamp="1586275919016" />

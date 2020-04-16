@@ -10,11 +10,19 @@ class RegexTest {
 
     @org.junit.jupiter.api.Test
     void regexName() {
+
           assertTrue(Regex.regexName("Eivind"));
         assertTrue(Regex.regexName("Eivind Skandsen"));
 
         assertFalse(Regex.regexName(""));
         assertFalse(Regex.regexName(";"));
+
+        assertTrue(Regex.regexName("Eivind123"));
+        assertTrue(Regex.regexName("Eivind Skandsen123"));
+
+        assertFalse(Regex.regexName(""));
+        assertFalse(Regex.regexName("%&¤#(/"));
+
     }
 
     @org.junit.jupiter.api.Test
@@ -22,8 +30,14 @@ class RegexTest {
         assertTrue(Regex.regexDel("Skjerm"));
         assertTrue(Regex.regexDel("Skjerm kort"));
 
+
         assertFalse(Regex.regexDel(""));
         assertFalse(Regex.regexDel(";"));
+
+
+
+        assertFalse(Regex.regexDel(""));
+        assertFalse(Regex.regexDel("12345"));
 
     }
 }
