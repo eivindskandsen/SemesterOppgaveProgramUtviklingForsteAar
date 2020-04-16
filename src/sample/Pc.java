@@ -5,6 +5,9 @@ import javafx.beans.property.SimpleStringProperty;
 
 
 import javax.naming.InvalidNameException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public class Pc {
     private SimpleStringProperty Navn= new SimpleStringProperty("");
@@ -57,6 +60,23 @@ public class Pc {
 
     public String toString(){
         return Navn.getValue()+", "+Del.getValue()+", "+Pris.getValue()+"\n";
+    }
+
+    private void writeObj(ObjectOutputStream s) throws IOException{
+        s.defaultWriteObject();
+        s.writeUTF(Navn.getValue());
+        s.writeUTF(Del.getValue());
+        s.writeInt(Pris.getValue());
+    }
+
+    public void readObj(ObjectInputStream s) throws IOException{
+        String Navn = s.readUTF();
+        String Del = s.readUTF();
+        int Pris = s.readInt();
+
+        this.Navn = new SimpleStringProperty(Navn);
+        this.Del = new SimpleStringProperty(Del);
+        this.Pris = new SimpleIntegerProperty(Pris);
     }
 
 }

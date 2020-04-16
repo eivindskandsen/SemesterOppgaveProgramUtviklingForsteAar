@@ -6,9 +6,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.fxml.Initializable;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.stage.FileChooser;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 
@@ -33,6 +35,9 @@ public class Controller implements Initializable {
 
     @FXML
     private Button buttonLeggTil;
+
+    @FXML
+    private Button btnSave;
 
 
     @FXML
@@ -114,6 +119,8 @@ public class Controller implements Initializable {
             System.out.println(e.getMessage());
         }
         tableView.refresh();
+
+
     }
 
 
@@ -136,7 +143,18 @@ public class Controller implements Initializable {
             }
         }
     }
-
+    public void save() {
+        FileChooser save = new FileChooser();
+        FileChooser.ExtensionFilter saveTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
+        save.getExtensionFilters().addAll(saveTxt);
+        File fil = save.showOpenDialog(null);
+        String star = PcFormater.formatPc((Pc) etArray);
+        try {
+            WriterText.save(fil.toPath(), star);
+        } catch (IOException e) {
+            System.out.print("Noe gikk galt" + e.getMessage());
+        }
+    }
 
 
 
