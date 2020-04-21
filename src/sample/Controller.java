@@ -12,6 +12,7 @@ import javafx.stage.FileChooser;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 
@@ -39,6 +40,9 @@ public class Controller implements Initializable {
 
     @FXML
     private Button btnSave;
+
+    @FXML
+    private Button btnLoad;
 
     @FXML
     private Button butttonSlett;
@@ -158,18 +162,35 @@ public class Controller implements Initializable {
 
 
 
-    public void save() {
+    public void save() throws IOException {
         FileChooser save = new FileChooser();
         FileChooser.ExtensionFilter saveTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
         save.getExtensionFilters().addAll(saveTxt);
         File fil = save.showSaveDialog(null);
-        String star = PcFormater.formatPc((Pc) collection);
-        System.out.print(star);
-        try {
-            WriterText.save(fil.toPath(), star);
+        WriterText.save(fil.toPath(),collection.getList());
+    }
+
+    public void load(){
+        FileChooser load = new FileChooser();
+        load.setTitle("Select file");
+        FileChooser.ExtensionFilter loadTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
+        load.getExtensionFilters().addAll(loadTxt);
+        File fil = load.showOpenDialog(null);
+
+        try{
+            collection = FileReaderText.readTextFile(fil.toPath());
         } catch (IOException e) {
-            System.out.print("Noe gikk galt" + e.getMessage());
+            e.printStackTrace();
+        } catch (InvalidNameException e) {
+            e.printStackTrace();
+        } catch (javax.naming.InvalidNameException e) {
+            e.printStackTrace();
+        } catch (InvalidDelException e) {
+            e.printStackTrace();
+        } catch (InvalidPrisException e) {
+            e.printStackTrace();
         }
+
     }
 
 
