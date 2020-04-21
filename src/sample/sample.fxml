@@ -6,8 +6,8 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.control.cell.TextFieldTableCell?>
+<?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
       <Label fx:id="lblNavn" layoutX="272.0" layoutY="14.0" text="Navn" />
@@ -43,4 +43,5 @@
       <TextField fx:id="txtPris" layoutX="212.0" layoutY="143.0" />
       <Button fx:id="buttonLeggTil" layoutX="413.0" layoutY="143.0" mnemonicParsing="false" onAction="#actionButtonLeggTil" text="Legg til" />
    <Button fx:id="btnSave" layoutX="477.0" layoutY="143.0" mnemonicParsing="false" onAction="#save" text="Save" />
+   <Button fx:id="butttonSlett" layoutX="119.0" layoutY="143.0" mnemonicParsing="false" onAction="#actionButtonSlett" prefHeight="25.0" prefWidth="56.0" text="Slett" />
 </AnchorPane>

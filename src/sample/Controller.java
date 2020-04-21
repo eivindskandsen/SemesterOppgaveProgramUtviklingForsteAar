@@ -2,6 +2,7 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.fxml.Initializable;
@@ -39,9 +40,11 @@ public class Controller implements Initializable {
     @FXML
     private Button btnSave;
 
+    @FXML
+    private Button butttonSlett;
 
     @FXML
-    private TableView<?> tableView;
+    private TableView<Pc> tableView;
 
     @FXML
     private TableColumn<Pc, String> navnColumn;
@@ -110,6 +113,15 @@ public class Controller implements Initializable {
             }
         }
     }
+    @FXML
+    void actionButtonSlett(ActionEvent event) {
+
+            Pc component= tableView.getSelectionModel().getSelectedItem();
+            collection.deleteElement(component);
+
+    }
+
+
 
     public void endreNavn(TableColumn.CellEditEvent<Pc, String> cellEditEvent) {
         System.out.println(cellEditEvent.getNewValue());
@@ -143,6 +155,9 @@ public class Controller implements Initializable {
             }
         }
     }
+
+
+
     public void save() {
         FileChooser save = new FileChooser();
         FileChooser.ExtensionFilter saveTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");

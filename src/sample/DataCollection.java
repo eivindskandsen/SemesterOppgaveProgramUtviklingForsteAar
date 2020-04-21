@@ -12,6 +12,8 @@ public void attachTableView(TableView tv) { tv.setItems(list);}
 
     public void addElement(Pc obj) {list.add(obj);}
 
+    public void deleteElement(Pc obj){list.remove(obj);}
+
     public ObservableList<Pc> getList() {
         return list;
     }
