@@ -5,11 +5,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/DataCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/DataCollection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/FileReaderText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/FileReaderText.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/PcFormater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/PcFormater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/WriterText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/WriterText.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SemesterOppgaveProgramUtviklingForsteAar/test/RegexTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/SemesterOppgaveProgramUtviklingForsteAar/RegexTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/SemesterOppgaveProgramUtviklingForsteAar/RegexTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Pc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Pc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DataCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DataCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FileReaderText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileReaderText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/PcFormater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/PcFormater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/WriterText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/WriterText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +115,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ukesoppgave" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -348,6 +355,10 @@
     </state>
     <state x="36" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1587031086515" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586275942673" />
+    <state x="958" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1587465148162">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="958" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1587465148162" />
     <state x="570" y="284" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586275917527">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -356,10 +367,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1587031084984" />
-    <state x="629" y="325" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587032293876">
+    <state x="629" y="325" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587463326209">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="629" y="325" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1587032293876" />
+    <state x="629" y="325" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1587463326209" />
     <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586346908155" />
     <state x="636" y="363" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587467089799">
       <screen x="0" y="0" width="1680" height="1010" />
@@ -424,6 +435,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="222" y="124" key="new project wizard/0.0.1680.1010@0.0.1680.1010" timestamp="1586202054801" />
+    <state x="859" y="49" key="refactoring.ChangeSignatureDialog" timestamp="1587467041610">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="859" y="49" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1587467041610" />
     <state x="462" y="191" width="672" height="560" key="search.everywhere.popup" timestamp="1586351169019">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
