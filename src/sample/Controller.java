@@ -35,6 +35,9 @@ public class Controller implements Initializable {
     private TextField txtPris;
 
     @FXML
+    private TextField txtTotalPris;
+
+    @FXML
     private Button buttonLeggTil;
 
     @FXML
@@ -42,6 +45,9 @@ public class Controller implements Initializable {
 
     @FXML
     private Button butttonSlett;
+
+    @FXML
+    private Button totalPris;
 
     @FXML
     private TableView<Pc> tableView;
@@ -118,6 +124,14 @@ public class Controller implements Initializable {
 
             Pc component= tableView.getSelectionModel().getSelectedItem();
             collection.deleteElement(component);
+
+    }
+
+    @FXML
+    void actionTotalPris(ActionEvent event) {
+        Integer totalPris=collection.calculatePrice();
+
+        txtTotalPris.setText(totalPris.toString());
 
     }
 

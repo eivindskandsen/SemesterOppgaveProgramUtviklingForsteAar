@@ -44,4 +44,6 @@
       <Button fx:id="buttonLeggTil" layoutX="413.0" layoutY="143.0" mnemonicParsing="false" onAction="#actionButtonLeggTil" text="Legg til" />
    <Button fx:id="btnSave" layoutX="477.0" layoutY="143.0" mnemonicParsing="false" onAction="#save" text="Save" />
    <Button fx:id="butttonSlett" layoutX="119.0" layoutY="143.0" mnemonicParsing="false" onAction="#actionButtonSlett" prefHeight="25.0" prefWidth="56.0" text="Slett" />
+   <TextField fx:id="txtTotalPris" layoutX="423.0" layoutY="299.0" promptText="TotalPris" />
+   <Button fx:id="totalPris" layoutX="469.0" layoutY="268.0" mnemonicParsing="false" onAction="#actionTotalPris" text="Regn ut totalpris" />
 </AnchorPane>
