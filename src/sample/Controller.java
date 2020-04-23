@@ -179,9 +179,10 @@ public class Controller implements Initializable {
     public void save() throws IOException {
         FileChooser save = new FileChooser();
         FileChooser.ExtensionFilter saveTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
-        save.getExtensionFilters().addAll(saveTxt);
+        FileChooser.ExtensionFilter saveJobj = new FileChooser.ExtensionFilter("Jobj File (*.Jobj)", "*.Jobj");
+        save.getExtensionFilters().addAll(saveTxt, saveJobj);
         File fil = save.showSaveDialog(null);
-        WriterText.save(fil.toPath(),collection.getList());
+        WriterText.save(collection.getList(),fil.toPath());
     }
 
     public void load(){
@@ -193,6 +194,7 @@ public class Controller implements Initializable {
 
         try{
             collection = FileReaderText.readTextFile(fil.toPath());
+
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InvalidNameException e) {

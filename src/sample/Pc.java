@@ -8,11 +8,12 @@ import javax.naming.InvalidNameException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-public class Pc {
-    private SimpleStringProperty Navn= new SimpleStringProperty("");
-    private SimpleStringProperty Del= new SimpleStringProperty("");
-    private SimpleIntegerProperty Pris= new SimpleIntegerProperty(0);
+public class Pc implements Serializable {
+    private transient SimpleStringProperty Navn= new SimpleStringProperty("");
+    private transient SimpleStringProperty Del= new SimpleStringProperty("");
+    private transient SimpleIntegerProperty Pris= new SimpleIntegerProperty(0);
 
     Pc(String navn, String del, int pris) throws InvalidNameException, InvalidDelException, InvalidPrisException {
         setNavn(navn);

@@ -10,11 +10,12 @@ import java.util.List;
 public class WriteJobj implements FileWriter {
     public static void saveJobj (List<?> obj, Path path) throws IOException{
 
-        OutputStream stream = Files.newOutputStream(path);
-        ObjectOutputStream out = new ObjectOutputStream(stream);
+        try(OutputStream stream = Files.newOutputStream(path);
+        ObjectOutputStream out = new ObjectOutputStream(stream);){
 
-        for(Object ut : obj){
+        for(Object ut : obj) {
             out.writeObject(ut);
+            }
         }
     }
 }

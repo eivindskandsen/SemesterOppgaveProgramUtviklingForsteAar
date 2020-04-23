@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class WriterText implements FileWriter {
-    public static void save(Path path, List<?> obj) throws IOException{
+    public static void save(List<?> obj, Path path) throws IOException{
         Files.write(path, obj.toString().getBytes());
     }
 

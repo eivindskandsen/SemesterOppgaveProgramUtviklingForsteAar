@@ -14,18 +14,17 @@ public class FileReaderText implements FileOpener{
         DataCollection plist = new DataCollection();
 
         try (BufferedReader reader = Files.newBufferedReader(path)) {
-            String string;
-            while ((string = reader.readLine()) != null) {
-                string = string.replaceAll("(\\[)|(, )|(])","");
-                System.out.print(string);
-                String [] splittLinje = string.split(",");
+            String line;
+            while ((line = reader.readLine()) != null) {
+                line = line.replaceAll("(\\[)|(])","");
+                String [] splittLinje = line.split(",");
 
                 if(splittLinje.length == 3){
 
                     String navn = splittLinje[0];
                     String del = splittLinje[1];
-                    int pris = Integer.parseInt(splittLinje[2]);
-
+                    int pris = Integer.parseInt(splittLinje[2].replaceAll("( )",""));
+                    System.out.print(line);
                     Pc p = new Pc(navn, del, pris);
                     plist.addElement(p);
                 }
