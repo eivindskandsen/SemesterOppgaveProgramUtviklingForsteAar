@@ -188,9 +188,10 @@ public class Controller implements Initializable {
         save.getExtensionFilters().addAll(saveTxt, saveJobj);
         File fil = save.showSaveDialog(null);
 
-        String str = PcFormater.formatPCer(collection.getList());
+        //String str = PcFormater.formatPCer(collection.getList());
         try{
-            WriterText.save(str, fil.toPath());
+            //WriterText.save(str, fil.toPath());
+            WriteJobj.saveJobj(collection.getList(), fil.toPath());
         }
         catch (IOException e){
             System.out.print(e.getMessage());
@@ -207,7 +208,8 @@ public class Controller implements Initializable {
         File fil = load.showOpenDialog(null);
 
         try{
-            tableView.setItems(FileReaderText.readTextFile(fil.toPath()).getList());
+            //tableView.setItems(FileReaderText.readTextFile(fil.toPath()).getList());
+            tableView.setItems(FileReaderJobj.readJobjFile(fil.toPath()).getList());
         } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
             txtError.setText(e.getMessage());
         }

@@ -1,2 +1,2 @@
-GTX 970;Graf1kk;3500
+GTX 970;Grafikk;3500
 GTX 980;Grafikk;3500

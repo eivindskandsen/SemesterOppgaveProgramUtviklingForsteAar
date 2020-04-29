@@ -1,7 +1,5 @@
 package sample;
 
-import java.io.IOException;
-
 public class ParsePc {
     public static Pc parsePc(String str) throws InvalidPcFormatException, InvalidPrisException, InvalidDelException, javax.naming.InvalidNameException, InvalidNameException {
         String[] strs = str.split(PcFormater.DELIMITER);
