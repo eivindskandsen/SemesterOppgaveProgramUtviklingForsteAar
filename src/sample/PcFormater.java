@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +11,7 @@ public class PcFormater {
     public static String formatPc(Pc p){
         return p.getNavn()+DELIMITER+p.getDel()+DELIMITER+p.getPris();
     }
-    public static String formatPCer(ArrayList<Pc> pclist){
+    public static String formatPCer(ObservableList<Pc> pclist){
         StringBuffer str = new StringBuffer();
         for (Pc p : pclist){
             str.append(formatPc(p));

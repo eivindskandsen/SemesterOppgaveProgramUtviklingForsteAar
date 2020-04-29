@@ -39,7 +39,7 @@ public class Pc implements Serializable {
         return Del.getValue();
     }
 
-    public void setDel(String del) throws InvalidDelException{
+    public void setDel(String del) throws InvalidDelException {
         if(!PcValidator.isValidDel(del)){
             throw new InvalidDelException("Navn på del ikke godkjent");
         }else{
@@ -60,7 +60,7 @@ public class Pc implements Serializable {
     }
 
     public String toString(){
-        return Navn.getValue()+", "+Del.getValue()+", "+Pris.getValue()+"\n";
+        return Navn+", "+Del+", "+Pris+"\n";
     }
 
     private void writeObj(ObjectOutputStream s) throws IOException{
