@@ -70,13 +70,17 @@ public class Controller implements Initializable {
 
 
     ObservableList<Pc> etArray= FXCollections.observableArrayList();
-    DataCollection collection= new DataCollection();
+    static DataCollection collection= new DataCollection();
     IntegerStringConverter integerStringConverter= new IntegerStringConverter();
+
+
 
     public void initialize(URL url, ResourceBundle resourceBundle){
         collection.attachTableView(tableView);
         prisColumn.setCellFactory(TextFieldTableCell.forTableColumn(integerStringConverter));
     }
+
+
 
     private void resetTextFields(){
         txtNavn.setText("");
@@ -114,6 +118,8 @@ public class Controller implements Initializable {
         return enPc;
 
     }
+
+
 
 
 

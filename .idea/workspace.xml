@@ -66,8 +66,8 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,7 +110,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Skrivebord/Personregister" />
+    <property name="last_opened_file_path" value="C:/../../../Skrivebord/Personregister" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -133,8 +133,11 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Data\Universitet 06.04.2020\SemesterOppgaveProgramUtviklingForsteAar\src\sample" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -153,20 +156,6 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SluttBruker.Main" />
-      <module name="SemesterOppgaveProgramUtviklingForsteAar" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SluttBruker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="SemesterOppgaveProgramUtviklingForsteAar" />
@@ -178,6 +167,20 @@
       </extension>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Main2" />
+      <module name="SemesterOppgaveProgramUtviklingForsteAar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -296,11 +299,11 @@
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.RegexTest.regexName" />
       <item itemvalue="JUnit.RegexTest.regexDel" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main2" />
         <item itemvalue="JUnit.RegexTest.regexDel" />
         <item itemvalue="JUnit.RegexTest.regexName" />
       </list>
@@ -331,6 +334,7 @@
       <workItem from="1587643330409" duration="4364000" />
       <workItem from="1588070311315" duration="2160000" />
       <workItem from="1588158072260" duration="4063000" />
+      <workItem from="1588242410014" duration="11689000" />
     </task>
     <servers />
   </component>
@@ -385,11 +389,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="544" y="260" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1588158026872" />
-    <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588069393719">
+    <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588242416370">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="629" y="325" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1587463326209" />
-    <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588069393719" />
+    <state x="688" y="393" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588242416370" />
     <state x="636" y="363" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587467089799">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -399,26 +403,26 @@
     </state>
     <state x="567" y="202" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588161229753" />
     <state x="620" y="245" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1586340112472" />
-    <state width="1491" height="276" key="GridCell.Tab.0.bottom" timestamp="1588162243369">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1636" height="249" key="GridCell.Tab.0.bottom" timestamp="1588267891404">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1491" height="276" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588162243369" />
-    <state width="1636" height="249" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588151958211" />
-    <state width="1491" height="276" key="GridCell.Tab.0.center" timestamp="1588162243369">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1636" height="249" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588267891404" />
+    <state width="1636" height="249" key="GridCell.Tab.0.center" timestamp="1588267891402">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1491" height="276" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588162243369" />
-    <state width="1636" height="249" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588151958211" />
-    <state width="1491" height="276" key="GridCell.Tab.0.left" timestamp="1588162243369">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1636" height="249" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588267891402" />
+    <state width="1636" height="249" key="GridCell.Tab.0.left" timestamp="1588267891402">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1491" height="276" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588162243369" />
-    <state width="1636" height="249" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588151958211" />
-    <state width="1491" height="276" key="GridCell.Tab.0.right" timestamp="1588162243369">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1636" height="249" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588267891402" />
+    <state width="1636" height="249" key="GridCell.Tab.0.right" timestamp="1588267891403">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1491" height="276" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588162243369" />
-    <state width="1636" height="249" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588151958211" />
+    <state width="1636" height="249" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588267891403" />
     <state width="1491" height="264" key="GridCell.Tab.1.bottom" timestamp="1588158034575">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

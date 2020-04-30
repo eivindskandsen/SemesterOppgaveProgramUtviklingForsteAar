@@ -1,4 +1,4 @@
-package SluttBruker;
+package sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import static javafx.application.Application.launch;
 
-public class Main extends Application {
+public class Main2 extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{

@@ -8,7 +8,7 @@ import java.util.Collection;
 
 
 public class DataCollection {
-    private transient ObservableList<Pc> list= FXCollections.observableArrayList();
+    public ObservableList<Pc> list= FXCollections.observableArrayList();
 
     public void attachTableView(TableView tv) { tv.setItems(list);}
 
