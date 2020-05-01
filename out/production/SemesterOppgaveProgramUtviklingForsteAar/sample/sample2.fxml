@@ -4,25 +4,26 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<?import javafx.scene.control.cell.PropertyValueFactory?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
    <children>
       <Label alignment="CENTER" layoutX="98.0" layoutY="62.0" prefHeight="26.0" prefWidth="163.0" text="Utvalg" />
-      <TableView fx:id="utvalgListe" layoutX="66.0" layoutY="88.0" prefHeight="200.0" prefWidth="227.0">
+      <TableView fx:id="utvalgListe" editable="true" layoutX="66.0" layoutY="88.0" prefHeight="200.0" prefWidth="227.0">
         <columns>
-            <TableColumn prefWidth="75.0" text="navn" >
+            <TableColumn prefWidth="75.0" text="navn">
             <cellValueFactory>
                 <PropertyValueFactory property="Navn" />
             </cellValueFactory>
             </TableColumn>
-          <TableColumn prefWidth="75.0" text="del" >
+          <TableColumn prefWidth="75.0" text="del">
             <cellValueFactory>
                 <PropertyValueFactory property="Del" />
             </cellValueFactory>
           </TableColumn>
-            <TableColumn prefWidth="75.0" text="pris" >
+            <TableColumn prefWidth="75.0" text="pris">
             <cellValueFactory>
                 <PropertyValueFactory property="Pris" />
             </cellValueFactory>
@@ -31,12 +32,28 @@
       </TableView>
       <TableView fx:id="valgtListe" layoutX="319.0" layoutY="88.0" prefHeight="200.0" prefWidth="227.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="navn" />
-          <TableColumn prefWidth="75.0" text="del" />
-            <TableColumn prefWidth="75.0" text="pris" />
+          <TableColumn prefWidth="75.0" text="navn">
+            <cellValueFactory>
+                <PropertyValueFactory property="Navn" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn prefWidth="75.0" text="del">
+            <cellValueFactory>
+                <PropertyValueFactory property="Del" />
+            </cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="75.0" text="pris">
+            <cellValueFactory>
+                <PropertyValueFactory property="Pris" />
+            </cellValueFactory>
+            </TableColumn>
         </columns>
       </TableView>
       <Label alignment="CENTER" layoutX="365.0" layoutY="67.0" prefHeight="17.0" prefWidth="149.0" text="Valgt" />
       <Button layoutX="26.0" layoutY="55.0" mnemonicParsing="false" onAction="#hentData" text="Vis komponenter" />
+      <Button layoutX="274.0" layoutY="50.0" mnemonicParsing="false" onAction="#leggTilIValgt" text="Legg til i Valgt" />
+      <Button layoutX="488.0" layoutY="50.0" mnemonicParsing="false" onAction="#slettFraValgt" text="Slet fra Valgt" />
+      <TextField fx:id="txtTotalPris" layoutX="365.0" layoutY="344.0" />
+      <Button layoutX="414.0" layoutY="307.0" mnemonicParsing="false" onAction="#regnUtTotalPris" text="Regn ut totalpris" />
    </children>
 </AnchorPane>

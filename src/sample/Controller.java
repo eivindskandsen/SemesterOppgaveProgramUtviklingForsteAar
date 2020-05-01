@@ -69,15 +69,22 @@ public class Controller implements Initializable {
     private TableColumn<Pc, Integer> prisColumn;
 
 
-    ObservableList<Pc> etArray= FXCollections.observableArrayList();
+
     static DataCollection collection= new DataCollection();
     IntegerStringConverter integerStringConverter= new IntegerStringConverter();
 
 
+    public void enMetode(){
+        TestData.addTestData(collection.getList());
+    }
+
+
 
     public void initialize(URL url, ResourceBundle resourceBundle){
+        enMetode();
         collection.attachTableView(tableView);
         prisColumn.setCellFactory(TextFieldTableCell.forTableColumn(integerStringConverter));
+
     }
 
 

@@ -20,6 +20,7 @@ public class Pc implements Serializable {
         setDel(del);
         setPris(pris);
 
+
     }
 
     public String getNavn(){
@@ -34,6 +35,8 @@ public class Pc implements Serializable {
         }
 
     }
+
+
 
     public String getDel(){
         return Del.getValue();
