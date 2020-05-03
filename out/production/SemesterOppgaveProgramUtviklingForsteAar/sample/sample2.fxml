@@ -53,7 +53,8 @@
       <Button layoutX="26.0" layoutY="55.0" mnemonicParsing="false" onAction="#hentData" text="Vis komponenter" />
       <Button layoutX="274.0" layoutY="50.0" mnemonicParsing="false" onAction="#leggTilIValgt" text="Legg til i Valgt" />
       <Button layoutX="488.0" layoutY="50.0" mnemonicParsing="false" onAction="#slettFraValgt" text="Slet fra Valgt" />
-      <TextField fx:id="txtTotalPris" layoutX="365.0" layoutY="344.0" />
-      <Button layoutX="414.0" layoutY="307.0" mnemonicParsing="false" onAction="#regnUtTotalPris" text="Regn ut totalpris" />
+      <TextField fx:id="txtTotalPris" layoutX="321.0" layoutY="332.0" />
+      <Button layoutX="321.0" layoutY="307.0" mnemonicParsing="false" onAction="#regnUtTotalPris" text="Regn ut totalpris" />
+      <Button fx:id="saveValgt" onAction="#saveValgt" layoutX="514.0" layoutY="307.0" mnemonicParsing="false" text="Save" />
    </children>
 </AnchorPane>
