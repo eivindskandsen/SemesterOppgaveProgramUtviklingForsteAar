@@ -80,14 +80,12 @@ public class Controller2 implements Initializable {
     public void saveValgt() {
         FileChooser saveValgt = new FileChooser();
         FileChooser.ExtensionFilter saveTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
-        FileChooser.ExtensionFilter saveJobj = new FileChooser.ExtensionFilter("Jobj File (*.Jobj)", "*.Jobj");
-        saveValgt.getExtensionFilters().addAll(saveTxt, saveJobj);
+        saveValgt.getExtensionFilters().addAll(saveTxt);
         File fil = saveValgt.showSaveDialog(null);
 
         String str = PcFormater.formatPCer(collection3.getList());
         try{
             WriterText.save(str, fil.toPath());
-           // WriteJobj.saveJobj(collection.getList(), fil.toPath());
         }
         catch (IOException e){
             System.out.print(e.getMessage());

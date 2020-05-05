@@ -5,6 +5,7 @@ import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 
 public class WriteJobj implements FileWriter {
@@ -12,8 +13,7 @@ public class WriteJobj implements FileWriter {
 
         try(OutputStream stream = Files.newOutputStream(path);
         ObjectOutputStream out = new ObjectOutputStream(stream);){
-
-        for(Object ut : obj) {
+            for(Object ut : obj) {
             out.writeObject(ut);
             }
         }

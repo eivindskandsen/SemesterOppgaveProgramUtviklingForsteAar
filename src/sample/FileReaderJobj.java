@@ -12,15 +12,12 @@ public class FileReaderJobj implements FileOpener {
         DataCollection plist = new DataCollection();
             try(InputStream inn = Files.newInputStream(path);
             ObjectInputStream oInn = new ObjectInputStream(inn)){
-            plist = (DataCollection) oInn.readObject();
-
-
+                plist.addElement((Pc) oInn.readObject());
 
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
 
         }
-            System.out.print(plist);
         return plist;
     }
 }

@@ -66,14 +66,14 @@ public class Pc implements Serializable {
         return Navn+", "+Del+", "+Pris+"\n";
     }
 
-    private void writeObj(ObjectOutputStream s) throws IOException{
+    private void writeObject(ObjectOutputStream s) throws IOException{
         s.defaultWriteObject();
         s.writeUTF(Navn.getValue());
         s.writeUTF(Del.getValue());
         s.writeInt(Pris.getValue());
     }
 
-    public void readObj(ObjectInputStream s) throws IOException{
+    public void readObject(ObjectInputStream s) throws IOException{
         String Navn = s.readUTF();
         String Del = s.readUTF();
         int Pris = s.readInt();

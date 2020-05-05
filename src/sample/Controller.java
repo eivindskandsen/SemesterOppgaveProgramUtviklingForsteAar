@@ -196,14 +196,11 @@ public class Controller implements Initializable {
 
     public void save() {
         FileChooser save = new FileChooser();
-        FileChooser.ExtensionFilter saveTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
         FileChooser.ExtensionFilter saveJobj = new FileChooser.ExtensionFilter("Jobj File (*.Jobj)", "*.Jobj");
-        save.getExtensionFilters().addAll(saveTxt, saveJobj);
+        save.getExtensionFilters().addAll(saveJobj);
         File fil = save.showSaveDialog(null);
 
-        //String str = PcFormater.formatPCer(collection.getList());
         try{
-            //WriterText.save(str, fil.toPath());
             WriteJobj.saveJobj(collection.getList(), fil.toPath());
         }
         catch (IOException e){
@@ -216,7 +213,8 @@ public class Controller implements Initializable {
         load.setTitle("Select file");
         //Velger hvilke type filer du kan velge mellom
         FileChooser.ExtensionFilter loadTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
-        load.getExtensionFilters().addAll(loadTxt);
+        FileChooser.ExtensionFilter loadJobj = new FileChooser.ExtensionFilter("Jobj File (*.Jobj)", "*.Jobj");
+        load.getExtensionFilters().addAll(loadTxt, loadJobj);
         // Åpner opp vinduet der du kan velge filer
         File fil = load.showOpenDialog(null);
 
