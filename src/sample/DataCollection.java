@@ -35,12 +35,12 @@ public class DataCollection {
         return list;
     }
 
-    public void writeObject(ObjectOutputStream s) throws IOException{
+    private void writeObject(ObjectOutputStream s) throws IOException{
         s.defaultWriteObject();
         s.writeObject(new ArrayList<>(list));
     }
 
-    public void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException{
+    private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException{
         List<Pc> plist = (List<Pc>) s.readObject();
         list = FXCollections.observableArrayList();
         list.addAll(plist);

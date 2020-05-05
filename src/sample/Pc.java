@@ -73,7 +73,7 @@ public class Pc implements Serializable {
         s.writeInt(Pris.getValue());
     }
 
-    public void readObject(ObjectInputStream s) throws IOException{
+    private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException{
         String Navn = s.readUTF();
         String Del = s.readUTF();
         int Pris = s.readInt();

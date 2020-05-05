@@ -8,7 +8,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
    <children>
       <Label alignment="CENTER" layoutX="98.0" layoutY="62.0" prefHeight="26.0" prefWidth="163.0" text="Utvalg" />
       <TableView fx:id="utvalgListe" editable="true" layoutX="66.0" layoutY="88.0" prefHeight="200.0" prefWidth="227.0">
@@ -52,9 +52,11 @@
       <Label alignment="CENTER" layoutX="365.0" layoutY="67.0" prefHeight="17.0" prefWidth="149.0" text="Valgt" />
       <Button layoutX="26.0" layoutY="55.0" mnemonicParsing="false" onAction="#hentData" text="Vis komponenter" />
       <Button layoutX="274.0" layoutY="50.0" mnemonicParsing="false" onAction="#leggTilIValgt" text="Legg til i Valgt" />
-      <Button layoutX="488.0" layoutY="50.0" mnemonicParsing="false" onAction="#slettFraValgt" text="Slet fra Valgt" />
+      <Button layoutX="488.0" layoutY="50.0" mnemonicParsing="false" onAction="#slettFraValgt" text="Slett fra Valgt" />
       <TextField fx:id="txtTotalPris" layoutX="321.0" layoutY="332.0" />
       <Button layoutX="321.0" layoutY="307.0" mnemonicParsing="false" onAction="#regnUtTotalPris" text="Regn ut totalpris" />
-      <Button fx:id="saveValgt" onAction="#saveValgt" layoutX="514.0" layoutY="307.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="saveValgt" layoutX="512.0" layoutY="307.0" mnemonicParsing="false" onAction="#saveValgt" prefHeight="26.0" prefWidth="50.0" text="Save" />
+      <Button fx:id="LoadValgt" layoutX="511.0" layoutY="344.0" mnemonicParsing="false" onAction="#loadValgt" prefHeight="26.0" prefWidth="50.0" text="Load" />
+      <Label fx:id="txtError" layoutX="38.0" layoutY="325.0" prefHeight="18.0" prefWidth="239.0" />
    </children>
 </AnchorPane>

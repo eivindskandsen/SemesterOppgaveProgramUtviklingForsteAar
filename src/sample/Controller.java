@@ -211,24 +211,18 @@ public class Controller implements Initializable {
     public void load(){
         FileChooser load = new FileChooser();
         load.setTitle("Select file");
-        //Velger hvilke type filer du kan velge mellom
-        FileChooser.ExtensionFilter loadTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
+
         FileChooser.ExtensionFilter loadJobj = new FileChooser.ExtensionFilter("Jobj File (*.Jobj)", "*.Jobj");
-        load.getExtensionFilters().addAll(loadTxt, loadJobj);
+        load.getExtensionFilters().addAll(loadJobj);
         // Åpner opp vinduet der du kan velge filer
         File fil = load.showOpenDialog(null);
 
         try{
-            //tableView.setItems(FileReaderText.readTextFile(fil.toPath()).getList());
             tableView.setItems(FileReaderJobj.readJobjFile(fil.toPath()).getList());
         } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
             txtError.setText(e.getMessage());
         }
-
     }
-
-
-
-    }
+}
 
 

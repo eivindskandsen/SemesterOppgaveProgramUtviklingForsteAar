@@ -5,10 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -32,6 +29,11 @@ public class Controller2 implements Initializable {
     @FXML
     private Button saveValgt;
 
+    @FXML
+    private Button loadValgt;
+
+    @FXML
+    private Label txtError;
 
 
     DataCollection collection2= new DataCollection();
@@ -89,6 +91,23 @@ public class Controller2 implements Initializable {
         }
         catch (IOException e){
             System.out.print(e.getMessage());
+        }
+    }
+
+    public void loadValgt(){
+        FileChooser load = new FileChooser();
+        load.setTitle("Select file");
+        //Velger hvilke type filer du kan velge mellom
+        FileChooser.ExtensionFilter loadTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
+
+        load.getExtensionFilters().addAll(loadTxt);
+        // Åpner opp vinduet der du kan velge filer
+        File fil = load.showOpenDialog(null);
+
+        try{
+            valgtListe.setItems(FileReaderText.readTextFile(fil.toPath()).getList());
+        } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
+            txtError.setText(e.getMessage());
         }
     }
 }

@@ -11,8 +11,8 @@ public class FileReaderJobj implements FileOpener {
     public static DataCollection readJobjFile(Path path) throws IOException, InvalidPrisException, InvalidNameException, javax.naming.InvalidNameException, InvalidDelException{
         DataCollection plist = new DataCollection();
             try(InputStream inn = Files.newInputStream(path);
-            ObjectInputStream oInn = new ObjectInputStream(inn)){
-                plist.addElement((Pc) oInn.readObject());
+            ObjectInputStream s = new ObjectInputStream(inn)){
+                plist.addElement((Pc) s.readObject());
 
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
