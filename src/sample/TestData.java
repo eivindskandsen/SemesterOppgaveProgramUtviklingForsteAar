@@ -11,8 +11,9 @@ public class TestData {
             Pc nummer3= new Pc("Intel I7", "CPU", 500);
             Pc nummer4= new Pc("Logitech", "Tastatur", 200);
             Pc nummer5= new Pc("Razor", "Mus", 150);
+            Pc nummer6= new Pc("Intel","SSD", 200);
 
-            liste.addAll(nummer1, nummer2, nummer3, nummer4, nummer5);
+            liste.addAll(nummer1, nummer2, nummer3, nummer4, nummer5, nummer6);
 
         }catch(InvalidDelException e){
             System.out.println(e);

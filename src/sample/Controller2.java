@@ -101,7 +101,7 @@ public class Controller2 implements Initializable {
         FileChooser.ExtensionFilter loadTxt = new FileChooser.ExtensionFilter("Txt File (*.txt)", "*.txt");
 
         load.getExtensionFilters().addAll(loadTxt);
-        // Åpner opp vinduet der du kan velge filer
+        // AApner opp vinduet der du kan velge filer
         File fil = load.showOpenDialog(null);
 
         try{
