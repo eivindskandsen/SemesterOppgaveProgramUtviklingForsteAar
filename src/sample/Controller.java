@@ -1,7 +1,11 @@
 package sample;
 
+
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,6 +13,8 @@ import javafx.scene.control.*;
 import javafx.fxml.Initializable;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.FileChooser;
+import javafx.beans.value.ChangeListener;
+import javafx.collections.ListChangeListener;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,6 +52,9 @@ public class Controller implements Initializable {
     private TextField txtTotalPris;
 
     @FXML
+    private TextField txtFilter;
+
+    @FXML
     private Button buttonLeggTil;
 
     @FXML
@@ -80,14 +89,43 @@ public class Controller implements Initializable {
     IntegerStringConverter integerStringConverter= new IntegerStringConverter();
 
 
+
+
     public void enMetode(){
         TestData.addTestData(collection.getList());
     }
 
 
 
+
+
     public void initialize(URL url, ResourceBundle resourceBundle){
         enMetode();
+
+
+     /*  FilteredList<Pc> filteredData= new FilteredList<>(collection.getList(), p -> true);
+        txtFilter.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredData.setPredicate(pc -> {
+                if(newValue==null||newValue.isEmpty()){
+                    return true;
+                }
+                String lowerCaseFilter=newValue.toLowerCase();
+
+                if(pc.getNavn().toLowerCase().contains(lowerCaseFilter)){
+                    return true;
+                }else if(pc.getDel().toLowerCase().contains(lowerCaseFilter)){
+                    return true;
+                }else if(Integer.toString(pc.getPris()).toLowerCase().contains(lowerCaseFilter)){
+                    return true;
+                }
+                    return false;
+            });
+        });
+
+        SortedList<Pc> sortedData=new SortedList<>(filteredData);
+        sortedData.comparatorProperty().bind(tableView.comparatorProperty());
+        tableView.setItems(sortedData); */
+
         collection.attachTableView(tableView);
         prisColumn.setCellFactory(TextFieldTableCell.forTableColumn(integerStringConverter));
 
