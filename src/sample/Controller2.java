@@ -11,6 +11,8 @@ import javafx.stage.FileChooser;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ResourceBundle;
 
 public class Controller2 implements Initializable {
@@ -42,8 +44,11 @@ public class Controller2 implements Initializable {
     ObservableList<Pc> ettArray = sample.Controller.collection.getList();
 
     public void hentKomponentListe(){
-        for(Pc komponent : ettArray){
-            collection2.addElement(komponent);
+        Path path = Paths.get("superBruker2.txt");
+        try{
+        utvalgListe.setItems(FileReaderText.readTextFile(path).getList());
+        }catch (IOException | InvalidPrisException | InvalidNameException | InvalidDelException | javax.naming.InvalidNameException e){
+            txtError.setText("Noe gikk galt");
         }
     }
 

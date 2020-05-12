@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WriteJobj implements FileWriter {
-    public static void saveJobj (List<?> obj, Path path) throws IOException{
+    public static void saveJobj(List<?> obj, Path path) throws IOException {
 
-        try(OutputStream stream = Files.newOutputStream(path);
-        ObjectOutputStream out = new ObjectOutputStream(stream);){
-            for(Object ut : obj) {
-            out.writeObject(ut);
+        try (OutputStream stream = Files.newOutputStream(path);
+             ObjectOutputStream out = new ObjectOutputStream(stream);) {
+            for (Object ut : obj) {
+                out.writeObject(ut);
             }
         }
     }

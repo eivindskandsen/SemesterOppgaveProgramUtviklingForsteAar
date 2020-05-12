@@ -1,3 +1,6 @@
 GTX 500;Skjermkort;250
 Samsung 300;Skjerm;300
 Intel I7;CPU;500
+Logitech;Tastatur;200
+Razor;Mus;150
+Intel;SSD;200

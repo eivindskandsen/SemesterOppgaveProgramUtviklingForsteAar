@@ -2,6 +2,7 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -12,6 +13,9 @@ import javafx.stage.FileChooser;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -67,6 +71,8 @@ public class Controller implements Initializable {
 
     @FXML
     private TableColumn<Pc, Integer> prisColumn;
+
+    private ThreadLoad task;
 
 
 
@@ -195,33 +201,54 @@ public class Controller implements Initializable {
 
 
     public void save() {
-        FileChooser save = new FileChooser();
-        FileChooser.ExtensionFilter saveJobj = new FileChooser.ExtensionFilter("Jobj File (*.Jobj)", "*.Jobj");
-        save.getExtensionFilters().addAll(saveJobj);
-        File fil = save.showSaveDialog(null);
-
+        Path path = Paths.get("superBruker.Jobj");
+        Path path2 = Paths.get("superBruker2.txt");
+        //Fikk ikke til å leste opp kun
+        String str = PcFormater.formatPCer(collection.getList());
         try{
-            WriteJobj.saveJobj(collection.getList(), fil.toPath());
+            ArrayList<Pc> pcr = new ArrayList<>(collection.getList());
+            WriteJobj.saveJobj(pcr, path);
+            WriterText.save(str, path2);
         }
         catch (IOException e){
             System.out.print(e.getMessage());
         }
     }
 
-    public void load(){
-        FileChooser load = new FileChooser();
-        load.setTitle("Select file");
+    public void load() throws InvalidPrisException, InvalidNameException, InvalidDelException, javax.naming.InvalidNameException, IOException {
+        Path path = Paths.get("superBruker2.txt");
+        task = new ThreadLoad(FileReaderText.readTextFile(path).getList());
+        task.setOnSucceeded(this::threadDone);
+        task.setOnFailed(this::threadFailed);
+        Thread th = new Thread(task);
+        th.setDaemon(true);
+        buttonLeggTil.setDisable(true);
+        btnSave.setDisable(true);
+        btnLoad.setDisable(true);
+        butttonSlett.setDisable(true);
+        totalPris.setDisable(true);
+        tableView.setDisable(true);
+        th.start();
+    }
 
-        FileChooser.ExtensionFilter loadJobj = new FileChooser.ExtensionFilter("Jobj File (*.Jobj)", "*.Jobj");
-        load.getExtensionFilters().addAll(loadJobj);
-        // Åpner opp vinduet der du kan velge filer
-        File fil = load.showOpenDialog(null);
+    private void threadDone(WorkerStateEvent e){
+        collection.addAll(task.getValue());
+        buttonLeggTil.setDisable(false);
+        btnSave.setDisable(false);
+        btnLoad.setDisable(false);
+        butttonSlett.setDisable(false);
+        totalPris.setDisable(false);
+        tableView.setDisable(false);
+    }
 
-        try{
-            tableView.setItems(FileReaderJobj.readJobjFile(fil.toPath()).getList());
-        } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
-            txtError.setText(e.getMessage());
-        }
+    private void threadFailed(WorkerStateEvent e){
+       txtError.setText(e.getSource().getMessage());
+        buttonLeggTil.setDisable(false);
+        btnSave.setDisable(false);
+        btnLoad.setDisable(false);
+        butttonSlett.setDisable(false);
+        totalPris.setDisable(false);
+        tableView.setDisable(false);
     }
 }
 

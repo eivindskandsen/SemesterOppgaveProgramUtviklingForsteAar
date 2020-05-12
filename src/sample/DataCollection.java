@@ -20,6 +20,11 @@ public class DataCollection {
 
     public void addElement(Pc obj) {list.add(obj);}
 
+    public void addAll(ObservableList<Pc> liste){
+        list.clear();
+        list.addAll(liste);
+    }
+
     public void deleteElement(Pc obj){list.remove(obj);}
 
     public int calculatePrice(){
@@ -35,12 +40,12 @@ public class DataCollection {
         return list;
     }
 
-    private void writeObject(ObjectOutputStream s) throws IOException{
+    public void writeObject(ObjectOutputStream s) throws IOException{
         s.defaultWriteObject();
         s.writeObject(new ArrayList<>(list));
     }
 
-    private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException{
+    public void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException{
         List<Pc> plist = (List<Pc>) s.readObject();
         list = FXCollections.observableArrayList();
         list.addAll(plist);
