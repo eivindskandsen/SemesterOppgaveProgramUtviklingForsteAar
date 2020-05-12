@@ -203,11 +203,12 @@ public class Controller implements Initializable {
     public void save() {
         Path path = Paths.get("superBruker.Jobj");
         Path path2 = Paths.get("superBruker2.txt");
-        //Fikk ikke til å leste opp kun
         String str = PcFormater.formatPCer(collection.getList());
         try{
+            //Lagrer til Binary fil
             ArrayList<Pc> pcr = new ArrayList<>(collection.getList());
             WriteJobj.saveJobj(pcr, path);
+            //Lagrer til tekst fil, siden jeg ikk fikk til aa bruke binary filen
             WriterText.save(str, path2);
         }
         catch (IOException e){
