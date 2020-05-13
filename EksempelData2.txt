@@ -1,8 +1,10 @@
-ASUS GeForce RTX 2080 Ti ROG Strix;Grafikkort;17000
-Intel Core i9 9900K;CPU;6000
-Giagbyte Z390 AORUS MASTER;Hovedkort;4500
-Philips 32 ;Skjerm;4000
-G.Skill Trident Z 32GB;RAM;3000
-ASUS ROG Strix LC 360;Vifte;3000
-Razer BlackWidow Elite;Tastatur;2500
-Razer Viper Ultimate;Mus;2000
+Cooler Master ML240R RGB;Vifte;1500
+Corsair Gaming K70;Tastatur;2000
+Corsair RM650x;Stroemforsyning;1500
+MSI Optix 27 LED;Skjerm;3500
+HyperX Impact DDR4 32GB;RAM;2000
+HyperX FURY S Pro XL;Musematte;500
+Corsair Gaming Dark Core RGB SE Pro;Mus;1500
+ASUS ROG Strix Z390 F;Hovedkort;2000
+Gigabyte GeForce GTX 1650 SUPER WF OC 4G;Grafikkort;2500
+AMD Ryzen 7 3700X;CPU;4000
