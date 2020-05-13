@@ -9,13 +9,13 @@
 <?import javafx.scene.control.cell.TextFieldTableCell?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
       <Label fx:id="lblNavn" layoutX="272.0" layoutY="14.0" text="Navn" />
       <Label fx:id="lblDel" layoutX="272.0" layoutY="66.0" text="Del" />
       <Label fx:id="lblPris" layoutX="272.0" layoutY="126.0" text="Pris" />
-      <TableView fx:id="tableView" editable="true" layoutX="164.0" layoutY="181.0" prefHeight="200.0" prefWidth="233.0">
+      <TableView fx:id="tableView" editable="true" layoutX="64.0" layoutY="181.0" prefHeight="200.0" prefWidth="296.0">
         <columns>
-          <TableColumn fx:id="navnColumn" onEditCommit="#endreNavn" prefWidth="75.0" text="navn">
+          <TableColumn fx:id="navnColumn" onEditCommit="#endreNavn" prefWidth="104.0" text="navn">
             <cellValueFactory>
                 <PropertyValueFactory property="Navn" />
             </cellValueFactory>
@@ -23,7 +23,7 @@
                   <TextFieldTableCell fx:factory="forTableColumn" />
               </cellFactory>
           </TableColumn>
-          <TableColumn fx:id="delColumn" onEditCommit="#endreDel" prefWidth="75.0" text="del">
+          <TableColumn fx:id="delColumn" onEditCommit="#endreDel" prefWidth="92.0" text="del">
             <cellValueFactory>
                 <PropertyValueFactory property="Del" />
             </cellValueFactory>
@@ -31,7 +31,7 @@
                   <TextFieldTableCell fx:factory="forTableColumn" />
               </cellFactory>
           </TableColumn>
-            <TableColumn fx:id="prisColumn" onEditCommit="#endrePris" prefWidth="75.0" text="pris">
+            <TableColumn fx:id="prisColumn" onEditCommit="#endrePris" prefWidth="99.99993896484375" text="pris">
             <cellValueFactory>
                 <PropertyValueFactory property="Pris" />
             </cellValueFactory>
@@ -41,13 +41,13 @@
       <TextField fx:id="txtNavn" layoutX="212.0" layoutY="31.0" />
       <TextField fx:id="txtDel" layoutX="212.0" layoutY="93.0" />
       <TextField fx:id="txtPris" layoutX="212.0" layoutY="143.0" />
-      <Button fx:id="buttonLeggTil" layoutX="413.0" layoutY="143.0" mnemonicParsing="false" onAction="#actionButtonLeggTil" text="Legg til" />
-   <Button fx:id="btnSave" layoutX="423.0" layoutY="180.0" mnemonicParsing="false" onAction="#save" text="Save" />
-   <Button fx:id="butttonSlett" layoutX="477.0" layoutY="143.0" mnemonicParsing="false" onAction="#actionButtonSlett" prefHeight="25.0" prefWidth="56.0" text="Slett" />
-   <TextField fx:id="txtTotalPris" layoutX="423.0" layoutY="299.0" promptText="TotalPris" />
-   <Button fx:id="totalPris" layoutX="469.0" layoutY="268.0" mnemonicParsing="false" onAction="#actionTotalPris" text="Regn ut totalpris" />
-   <Button fx:id="btnLoad" layoutX="477.0" layoutY="180.0" mnemonicParsing="false" onAction="#load" text="Load" />
-   <Label fx:id="txtError" layoutX="22.0" layoutY="398.0" prefHeight="18.0" prefWidth="534.0" />
-   <Label layoutX="9.0" layoutY="303.0" text="Filter" />
-   <TextField fx:id="txtFilter" layoutX="48.0" layoutY="299.0" prefHeight="25.0" prefWidth="116.0" onKeyPressed="#search"/>
+      <Button fx:id="buttonLeggTil" layoutX="376.0" layoutY="181.0" mnemonicParsing="false" onAction="#actionButtonLeggTil" text="Legg til" />
+   <Button fx:id="btnSave" layoutX="376.0" layoutY="247.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="56.0" text="Save" />
+   <Button fx:id="butttonSlett" layoutX="376.0" layoutY="212.0" mnemonicParsing="false" onAction="#actionButtonSlett" prefHeight="25.0" prefWidth="56.0" text="Slett" />
+   <TextField fx:id="txtTotalPris" layoutX="466.0" layoutY="280.0" prefHeight="26.0" prefWidth="105.0" promptText="TotalPris" />
+   <Button fx:id="totalPris" layoutX="467.0" layoutY="247.0" mnemonicParsing="false" onAction="#actionTotalPris" text="Regn ut totalpris" />
+   <Button fx:id="btnLoad" layoutX="376.0" layoutY="280.0" mnemonicParsing="false" onAction="#load" prefHeight="26.0" prefWidth="56.0" text="Load" />
+   <Label fx:id="txtError" layoutX="22.0" layoutY="403.0" prefHeight="18.0" prefWidth="534.0" />
+   <Label layoutX="109.0" layoutY="117.0" text="Filter" />
+   <TextField fx:id="txtFilter" layoutX="64.0" layoutY="143.0" onKeyPressed="#search" prefHeight="25.0" prefWidth="116.0" />
 </AnchorPane>
