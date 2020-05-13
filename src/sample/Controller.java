@@ -87,43 +87,16 @@ public class Controller implements Initializable {
     IntegerStringConverter integerStringConverter= new IntegerStringConverter();
 
 
-
-
-
-
-
-
-
-
     public void initialize(URL url, ResourceBundle resourceBundle){
-
-
-
-     /*  FilteredList<Pc> filteredData= new FilteredList<>(collection.getList(), p -> true);
-        txtFilter.textProperty().addListener((observable, oldValue, newValue) -> {
-            filteredData.setPredicate(pc -> {
-                if(newValue==null||newValue.isEmpty()){
-                    return true;
-                }
-                String lowerCaseFilter=newValue.toLowerCase();
-
-                if(pc.getNavn().toLowerCase().contains(lowerCaseFilter)){
-                    return true;
-                }else if(pc.getDel().toLowerCase().contains(lowerCaseFilter)){
-                    return true;
-                }else if(Integer.toString(pc.getPris()).toLowerCase().contains(lowerCaseFilter)){
-                    return true;
-                }
-                    return false;
-            });
-        });
-
-        SortedList<Pc> sortedData=new SortedList<>(filteredData);
-        sortedData.comparatorProperty().bind(tableView.comparatorProperty());
-        tableView.setItems(sortedData); */
-
         collection.attachTableView(tableView);
         prisColumn.setCellFactory(TextFieldTableCell.forTableColumn(integerStringConverter));
+
+        Path path = Paths.get("superBruker2.txt");
+        try{
+            tableView.setItems(FileReaderText.readTextFile(path).getList());
+        } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
+            txtError.setText(e.getMessage());
+        }
 
     }
 
