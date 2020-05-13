@@ -49,5 +49,5 @@
    <Button fx:id="btnLoad" layoutX="477.0" layoutY="180.0" mnemonicParsing="false" onAction="#load" text="Load" />
    <Label fx:id="txtError" layoutX="22.0" layoutY="398.0" prefHeight="18.0" prefWidth="534.0" />
    <Label layoutX="9.0" layoutY="303.0" text="Filter" />
-   <TextField fx:id="txtFilter" layoutX="48.0" layoutY="299.0" prefHeight="25.0" prefWidth="116.0" />
+   <TextField fx:id="txtFilter" layoutX="48.0" layoutY="299.0" prefHeight="25.0" prefWidth="116.0" onKeyPressed="#search"/>
 </AnchorPane>

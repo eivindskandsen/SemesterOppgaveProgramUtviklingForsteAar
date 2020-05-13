@@ -2,28 +2,26 @@ package sample;
 
 
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.transformation.FilteredList;
-import javafx.collections.transformation.SortedList;
+
 import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.fxml.Initializable;
 import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.stage.FileChooser;
-import javafx.beans.value.ChangeListener;
-import javafx.collections.ListChangeListener;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 
 public class Controller implements Initializable {
@@ -288,6 +286,15 @@ public class Controller implements Initializable {
         butttonSlett.setDisable(false);
         totalPris.setDisable(false);
         tableView.setDisable(false);
+    }
+
+    @FXML
+    private void search(KeyEvent e){
+        if(e.getCode() == (KeyCode.ENTER)){
+            ObservableList<Pc> filtrertListe = collection.getList().stream().filter(i -> ((i.getNavn().contains(txtFilter.getText())) || (i.getDel().contains(txtFilter.getText())) || (Integer.toString(i.getPris()).equals(txtFilter.getText())))).collect(Collectors.toCollection(FXCollections::observableArrayList));
+            tableView.setItems(filtrertListe);
+        }
+
     }
 }
 
