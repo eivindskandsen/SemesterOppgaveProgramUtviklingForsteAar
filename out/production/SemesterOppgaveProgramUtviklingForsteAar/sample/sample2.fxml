@@ -8,55 +8,55 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
    <children>
-      <Label alignment="CENTER" layoutX="98.0" layoutY="62.0" prefHeight="26.0" prefWidth="163.0" text="Utvalg" />
-      <TableView fx:id="utvalgListe" editable="true" layoutX="26.0" layoutY="88.0" prefHeight="200.0" prefWidth="227.0">
+      <Label alignment="CENTER" layoutX="82.0" layoutY="62.0" prefHeight="26.0" prefWidth="163.0" text="Utvalg" />
+      <TableView fx:id="utvalgListe" editable="true" layoutX="16.0" layoutY="88.0" prefHeight="346.0" prefWidth="295.0">
         <columns>
-            <TableColumn prefWidth="75.0" text="navn">
+            <TableColumn prefWidth="96.79998397827148" text="navn">
             <cellValueFactory>
                 <PropertyValueFactory property="Navn" />
             </cellValueFactory>
             </TableColumn>
-          <TableColumn prefWidth="75.0" text="del">
+          <TableColumn prefWidth="94.39999389648438" text="del">
             <cellValueFactory>
                 <PropertyValueFactory property="Del" />
             </cellValueFactory>
           </TableColumn>
-            <TableColumn prefWidth="75.0" text="pris">
+            <TableColumn prefWidth="104.00001525878906" text="pris">
             <cellValueFactory>
                 <PropertyValueFactory property="Pris" />
             </cellValueFactory>
             </TableColumn>
         </columns>
       </TableView>
-      <TableView fx:id="valgtListe" layoutX="348.0" layoutY="88.0" prefHeight="200.0" prefWidth="227.0">
+      <TableView fx:id="valgtListe" layoutX="435.0" layoutY="88.0" prefHeight="346.0" prefWidth="295.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="navn">
+          <TableColumn prefWidth="97.60003662109375" text="navn">
             <cellValueFactory>
                 <PropertyValueFactory property="Navn" />
             </cellValueFactory>
           </TableColumn>
-          <TableColumn prefWidth="75.0" text="del">
+          <TableColumn prefWidth="99.2000732421875" text="del">
             <cellValueFactory>
                 <PropertyValueFactory property="Del" />
             </cellValueFactory>
           </TableColumn>
-            <TableColumn prefWidth="75.0" text="pris">
+            <TableColumn prefWidth="92.800048828125" text="pris">
             <cellValueFactory>
                 <PropertyValueFactory property="Pris" />
             </cellValueFactory>
             </TableColumn>
         </columns>
       </TableView>
-      <Label alignment="CENTER" layoutX="365.0" layoutY="67.0" prefHeight="17.0" prefWidth="149.0" text="Valgt" />
-      <Button layoutX="26.0" layoutY="307.0" mnemonicParsing="false" onAction="#hentData" text="Vis komponenter" />
-      <Button layoutX="253.0" layoutY="162.0" mnemonicParsing="false" onAction="#leggTilIValgt" text="Legg til i Valgt" />
-      <Button layoutX="255.0" layoutY="199.0" mnemonicParsing="false" onAction="#slettFraValgt" text="Slett fra Valgt" />
-      <TextField fx:id="txtTotalPris" layoutX="347.0" layoutY="345.0" prefHeight="26.0" prefWidth="105.0" />
-      <Button layoutX="347.0" layoutY="307.0" mnemonicParsing="false" onAction="#regnUtTotalPris" text="Regn ut totalpris" />
-      <Button fx:id="saveValgt" layoutX="512.0" layoutY="306.0" mnemonicParsing="false" onAction="#saveValgt" prefHeight="26.0" prefWidth="62.0" text="Save" />
-      <Button fx:id="LoadValgt" layoutX="512.0" layoutY="345.0" mnemonicParsing="false" onAction="#loadValgt" prefHeight="26.0" prefWidth="62.0" text="Load" />
-      <Label fx:id="txtError" layoutX="20.0" layoutY="408.0" prefHeight="18.0" prefWidth="557.0" />
+      <Label alignment="CENTER" layoutX="508.0" layoutY="66.0" prefHeight="17.0" prefWidth="149.0" text="Valgt" />
+      <Button layoutX="102.0" layoutY="451.0" mnemonicParsing="false" onAction="#hentData" text="Vis komponenter" />
+      <Button layoutX="318.0" layoutY="162.0" mnemonicParsing="false" onAction="#leggTilIValgt" text="Legg til i Valgt" />
+      <Button layoutX="320.0" layoutY="198.0" mnemonicParsing="false" onAction="#slettFraValgt" text="Slett fra Valgt" />
+      <TextField fx:id="txtTotalPris" layoutX="474.0" layoutY="489.0" prefHeight="26.0" prefWidth="105.0" />
+      <Button layoutX="474.0" layoutY="450.0" mnemonicParsing="false" onAction="#regnUtTotalPris" text="Regn ut totalpris" />
+      <Button fx:id="saveValgt" layoutX="638.0" layoutY="450.0" mnemonicParsing="false" onAction="#saveValgt" prefHeight="26.0" prefWidth="62.0" text="Save" />
+      <Button fx:id="LoadValgt" layoutX="638.0" layoutY="489.0" mnemonicParsing="false" onAction="#loadValgt" prefHeight="26.0" prefWidth="62.0" text="Load" />
+      <Label fx:id="txtError" layoutX="96.0" layoutY="552.0" prefHeight="18.0" prefWidth="557.0" />
    </children>
 </AnchorPane>
