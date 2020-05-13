@@ -93,7 +93,7 @@ public class Controller implements Initializable {
 
         Path path = Paths.get("superBruker2.txt");
         try{
-            tableView.setItems(FileReaderText.readTextFile(path).getList());
+            collection.addAll(FileReaderText.readTextFile(path).getList());
         } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
             txtError.setText(e.getMessage());
         }
