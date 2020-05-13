@@ -1,0 +1,10 @@
+AMD Ryzen 5 3600;CPU;2000
+ASUS GeForce RTX 2060 PHOENIX;Grafikkort;5000
+ASUS ROG Strix B360 F;Hovedkort;1500
+3Dconnexion;Mus;1500
+HyperX Fury S Pro XL;Musematte;500
+G.Skill Trident Z 32GB;RAM;3000
+MSI Optix 27 LED;Skjerm;3500
+Corsair CV650;Stroemforsyning;1000
+Razer Huntsman Tournament Edition;Tastatur;2000
+CM Masterliquid ML120L;Vifte;1000

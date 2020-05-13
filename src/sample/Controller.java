@@ -215,7 +215,7 @@ public class Controller implements Initializable {
             //Lagrer til Binary fil
             ArrayList<Pc> pcr = new ArrayList<>(collection.getList());
             WriteJobj.saveJobj(pcr, path);
-            //Lagrer til tekst fil, siden jeg ikk fikk til aa bruke binary filen
+            //Lagrer til tekst fil, siden jeg ikke fikk til aa bruke binary filen 
             WriterText.save(str, path2);
         }
         catch (IOException e){

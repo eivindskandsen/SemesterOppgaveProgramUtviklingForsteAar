@@ -1,6 +1,46 @@
-GTX 500;Grafikkort;250
-Samsung 300;Skjerm;300
-Intel I7;CPU;500
-Logitech;Tastatur;200
-Razor;Mus;150
-Intel;SSD;200
+AMD Ryzen 5 3600;CPU;2000
+AMD Ryzen 7 3700X;CPU;4000
+Intel Core i5 9600K;CPU;3000
+Intel Core i9 9900K;CPU;6000
+ASUS GeForce RTX 2060 PHOENIX;Grafikkort;5000
+ASUS GeForce RTX 2080 Ti ROG Strix;Grafikkort;17000
+ASUS Radeon RX 5600 XT TUF EVO OC;Grafikkort;4000
+Gigabyte GeForce GTX 1650 SUPER WF OC 4G;Grafikkort;2500
+Sapphire Radeon RX 5500 XT NITRO+ 8GB;Grafikkort;3500
+ASUS ROG Strix B360 F;Hovedkort;1500
+ASUS ROG Strix B450;Hovedkort;1500
+ASUS ROG Strix Z390 F;Hovedkort;2000
+Giagbyte Z390 AORUS MASTER;Hovedkort;4500
+3Dconnexion;Mus;1500
+Corsair Gaming Dark Core RGB SE Pro;Mus;1500
+iiglo M610;Mus;300
+Logitech MX Anywhere;Mus;1000
+Razer Viper Ultimate;Mus;2000
+Glorious Gaming 3XL;Musematte;500
+HyperX Fury S Pro XL;Musematte;500
+HyperX FURY S Pro XL;Musematte;500
+Razer Firefly;Musematte;1000
+Corsair Vengeance RGB PRO DDR4 16GB;RAM;1500
+G.Skill Trident Z 32GB;RAM;3000
+HyperX Impact DDR4 32GB;RAM;2000
+HyperX Predator DDR4 16GB;RAM;1500
+Lenovo 27;Skjerm;3000
+MSI Optix 24 LED;Skjerm;3000
+MSI Optix 27 LED;Skjerm;3500
+Philips 32 ;Skjerm;4000
+Samsung 27 LED;Skjerm;2000
+Samsung 32 Curved ;Skjerm;3000
+Corsair CV650;Stroemforsyning;1000
+Corsair RM650x;Stroemforsyning;1500
+Corsair TX650M;Stroemforsyning;1000
+Phanteks Revolt Pro;Stroemforsyning;2000
+Corsair Gaming K70;Tastatur;2000
+Ducky one 2 Mini;Tastatur;1500
+Razer BlackWidow Elite;Tastatur;2500
+Razer Huntsman Tournament Edition;Tastatur;2000
+Svive TRiton RGB;Tastatur;1000
+Varmilo Va109M Ink;Tastatur;2000
+ASUS ROG Strix LC 360;Vifte;3000
+CM Masterliquid ML120L;Vifte;1000
+Cooler Master MasterFan;Vifte;500
+Cooler Master ML240R RGB;Vifte;1500
