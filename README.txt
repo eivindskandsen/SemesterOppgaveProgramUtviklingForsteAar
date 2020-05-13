@@ -1,6 +1,6 @@
 # SemesterOppgaveProgramUtviklingForsteAar
 
-Vi bruker jdk verson 1.8.0_242 
+Vi bruker Sdk/Jdk verson 1.8.0_242 
 
  
 
@@ -14,3 +14,5 @@ https://www.jetbrains.com/help/idea/configuring-testing-libraries.html
 Du kan bruke
  org.junit.jupiter:junit-jupiter:5.4.2
 bibloteket
+
+vi har hatt noen problemer med aa faa kjoert programmet, ved at kjoer knappen blir borte. aa skru intelij av og paa ser ut til aa fikse problemet
