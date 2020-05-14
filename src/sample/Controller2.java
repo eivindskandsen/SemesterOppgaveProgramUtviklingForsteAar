@@ -55,6 +55,7 @@ public class Controller2 implements Initializable {
         }catch (IOException | InvalidPrisException | InvalidNameException | InvalidDelException | javax.naming.InvalidNameException e){
             txtError.setText("Noe gikk galt");
         }
+        collection2.attachTableView(utvalgListe);
     }
 
     @Override
