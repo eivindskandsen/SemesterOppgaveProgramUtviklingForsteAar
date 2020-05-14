@@ -41,12 +41,12 @@ public class Controller2 implements Initializable {
     DataCollection collection2= new DataCollection();
     DataCollection collection3=new DataCollection();
 
-    ObservableList<Pc> ettArray = sample.Controller.collection.getList();
+
 
     public void hentKomponentListe(){
         Path path = Paths.get("superBruker2.txt");
         try{
-        utvalgListe.setItems(FileReaderText.readTextFile(path).getList());
+        collection2.addAll(FileReaderText.readTextFile(path).getList());
         }catch (IOException | InvalidPrisException | InvalidNameException | InvalidDelException | javax.naming.InvalidNameException e){
             txtError.setText("Noe gikk galt");
         }
@@ -67,9 +67,11 @@ public class Controller2 implements Initializable {
 
     @FXML
     void leggTilIValgt(ActionEvent event) {
-        Pc component= utvalgListe.getSelectionModel().getSelectedItem();
-        collection3.addElement(component);
+        if (utvalgListe.getSelectionModel().getSelectedItem() != null) {
+            Pc component = utvalgListe.getSelectionModel().getSelectedItem();
+            collection3.addElement(component);
 
+        }
     }
 
     @FXML
@@ -110,7 +112,7 @@ public class Controller2 implements Initializable {
         File fil = load.showOpenDialog(null);
 
         try{
-            valgtListe.setItems(FileReaderText.readTextFile(fil.toPath()).getList());
+            collection3.addAll(FileReaderText.readTextFile(fil.toPath()).getList());
         } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
             txtError.setText(e.getMessage());
         }

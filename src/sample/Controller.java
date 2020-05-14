@@ -4,6 +4,7 @@ package sample;
 
 
 import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 
 import javafx.concurrent.WorkerStateEvent;
@@ -265,6 +266,7 @@ public class Controller implements Initializable {
     @FXML
     private void search(KeyEvent e){
         if(e.getCode() == (KeyCode.ENTER)){
+
             ObservableList<Pc> filtrertListe = collection.getList().stream().filter(i -> ((i.getNavn().contains(txtFilter.getText())) || (i.getDel().contains(txtFilter.getText())) || (Integer.toString(i.getPris()).equals(txtFilter.getText())))).collect(Collectors.toCollection(FXCollections::observableArrayList));
             tableView.setItems(filtrertListe);
         }
