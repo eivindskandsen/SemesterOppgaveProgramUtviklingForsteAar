@@ -18,7 +18,8 @@ bibloteket
 Oppdatering:
 Vi har hatt noen problemer med import statementene med j.unit. Derfor har vi valgt å kommentere ut RegexTest  for at programmet skal kjøres enklere
 
-Vi har også hatt noen problemer med aa faa kjoert programmet, ved at kjoer knappen blir borte. aa skru intelij av og paa ser ut til aa fikse problemet
+Vi har også hatt noen problemer med aa faa kjoert programmet, ved at kjoer knappen blir borte. Aa skru intelij av og paa/eller bytte til riktig
+ SDK ser ut til aa fikse problemet.
 
 
 
