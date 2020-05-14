@@ -10,7 +10,7 @@ class RegexTest {
     @org.junit.jupiter.api.Test
     void regexName() {
 
-          assertTrue(Regex.regexName("Eivind"));
+        assertTrue(Regex.regexName("Eivind"));
         assertTrue(Regex.regexName("Eivind Skandsen"));
 
         assertFalse(Regex.regexName(""));

@@ -6,6 +6,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -14,6 +16,7 @@ import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 public class Controller2 implements Initializable {
 
@@ -37,6 +40,8 @@ public class Controller2 implements Initializable {
     @FXML
     private Label txtError;
 
+    @FXML
+    private TextField txtFilter;
 
     DataCollection collection2= new DataCollection();
     DataCollection collection3=new DataCollection();
@@ -115,6 +120,16 @@ public class Controller2 implements Initializable {
             collection3.addAll(FileReaderText.readTextFile(fil.toPath()).getList());
         } catch (IOException | InvalidNameException | javax.naming.InvalidNameException | InvalidPrisException | InvalidDelException e) {
             txtError.setText(e.getMessage());
+        }
+    }
+
+    @FXML
+    private void search(KeyEvent e){
+        if(e.getCode() == (KeyCode.ENTER)){
+
+            ObservableList<Pc> filtrertListe = collection2.getList().stream().filter(i -> ((i.getNavn().contains(txtFilter.getText())) || (i.getDel().contains(txtFilter.getText())) || (Integer.toString(i.getPris()).equals(txtFilter.getText())))).collect(Collectors.toCollection(FXCollections::observableArrayList));
+            utvalgListe.setItems(filtrertListe);
+
         }
     }
 }

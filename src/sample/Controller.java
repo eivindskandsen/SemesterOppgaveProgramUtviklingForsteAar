@@ -88,6 +88,7 @@ public class Controller implements Initializable {
     IntegerStringConverter integerStringConverter= new IntegerStringConverter();
 
 
+
     public void initialize(URL url, ResourceBundle resourceBundle){
         collection.attachTableView(tableView);
         prisColumn.setCellFactory(TextFieldTableCell.forTableColumn(integerStringConverter));
@@ -158,6 +159,10 @@ public class Controller implements Initializable {
 
             Pc component= tableView.getSelectionModel().getSelectedItem();
             collection.deleteElement(component);
+
+
+
+
 
     }
 
@@ -261,16 +266,6 @@ public class Controller implements Initializable {
         totalPris.setDisable(false);
         tableView.setDisable(false);
         txtFilter.setDisable(false);
-    }
-
-    @FXML
-    private void search(KeyEvent e){
-        if(e.getCode() == (KeyCode.ENTER)){
-
-            ObservableList<Pc> filtrertListe = collection.getList().stream().filter(i -> ((i.getNavn().contains(txtFilter.getText())) || (i.getDel().contains(txtFilter.getText())) || (Integer.toString(i.getPris()).equals(txtFilter.getText())))).collect(Collectors.toCollection(FXCollections::observableArrayList));
-            tableView.setItems(filtrertListe);
-        }
-
     }
 }
 

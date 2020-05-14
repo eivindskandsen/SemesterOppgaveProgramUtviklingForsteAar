@@ -48,6 +48,4 @@
    <Button fx:id="totalPris" layoutX="420.0" layoutY="459.0" mnemonicParsing="false" onAction="#actionTotalPris" text="Regn ut totalpris" />
    <Button fx:id="btnLoad" layoutX="420.0" layoutY="181.0" mnemonicParsing="false" onAction="#load" prefHeight="26.0" prefWidth="74.0" text="Load" />
    <Label fx:id="txtError" layoutX="64.0" layoutY="556.0" prefHeight="18.0" prefWidth="647.0" />
-   <Label layoutX="109.0" layoutY="117.0" text="Filter" />
-   <TextField fx:id="txtFilter" layoutX="64.0" layoutY="143.0" onKeyPressed="#search" prefHeight="25.0" prefWidth="116.0" />
 </AnchorPane>

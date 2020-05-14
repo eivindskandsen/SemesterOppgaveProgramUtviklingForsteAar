@@ -23,4 +23,4 @@ Vi har også hatt noen problemer med aa faa kjoert programmet, ved at kjoer knap
 
 
 Programmet starter to vinduer som ligger oppå hverandre. Superbrukeren saver både binert og tekstfil. For å hente ut oppdaterte komponenter
-i utvalg listen må man save først.
+i utvalg listen må man save først. Vi fikk ikke til å laste opp i binær fil, så vi bruker en txtfil for å vise at den laster opp i en tråd.

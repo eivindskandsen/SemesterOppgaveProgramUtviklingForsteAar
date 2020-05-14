@@ -8,7 +8,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
    <children>
       <Label alignment="CENTER" layoutX="82.0" layoutY="62.0" prefHeight="26.0" prefWidth="163.0" text="Utvalg" />
       <TableView fx:id="utvalgListe" editable="true" layoutX="16.0" layoutY="88.0" prefHeight="346.0" prefWidth="295.0">
@@ -58,5 +58,7 @@
       <Button fx:id="saveValgt" layoutX="638.0" layoutY="450.0" mnemonicParsing="false" onAction="#saveValgt" prefHeight="26.0" prefWidth="62.0" text="Save" />
       <Button fx:id="LoadValgt" layoutX="638.0" layoutY="489.0" mnemonicParsing="false" onAction="#loadValgt" prefHeight="26.0" prefWidth="62.0" text="Load" />
       <Label fx:id="txtError" layoutX="96.0" layoutY="552.0" prefHeight="18.0" prefWidth="557.0" />
+      <TextField fx:id="txtFilter" layoutX="217.0" layoutY="53.0" prefHeight="26.0" prefWidth="93.0" onKeyPressed="#search"/>
+      <Label layoutX="250.0" layoutY="28.0" text="Filter" />
    </children>
 </AnchorPane>
