@@ -242,7 +242,6 @@ public class Controller implements Initializable {
         butttonSlett.setDisable(true);
         totalPris.setDisable(true);
         tableView.setDisable(true);
-        txtFilter.setDisable(true);
         th.start();
     }
 
@@ -254,7 +253,6 @@ public class Controller implements Initializable {
         butttonSlett.setDisable(false);
         totalPris.setDisable(false);
         tableView.setDisable(false);
-        txtFilter.setDisable(false);
     }
 
     private void threadFailed(WorkerStateEvent e){
@@ -265,7 +263,6 @@ public class Controller implements Initializable {
         butttonSlett.setDisable(false);
         totalPris.setDisable(false);
         tableView.setDisable(false);
-        txtFilter.setDisable(false);
     }
 }
 
